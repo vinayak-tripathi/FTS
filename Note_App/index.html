@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="JS/jquery/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="JS/json2.js"></script>
+  <script type="text/javascript" src="JS/main.js"></script>
+  <script>
+    $(document).ready(function () {
+        notes = $("#notes");
+
+        load();
+
+        $("#create").click(function () {
+            show();
+        });
+        if (count === 0) {
+            show();
+        }
+    });
+    
+  </script>
+</head>
+
+<body style="padding: 0px;margin: 0px;">
+  <header>
+    <nav>
+    	<a href="index.html"><img src="images/TAB.png" alt="Team Absolute B" style="float: left; width:255px; height:70px;margin-left: 45px;"></a>
+    </nav>
+  </header> 
+
+  <main style="width: 100%;">
+
+  <div style="display:block;width: 100%;">
+    <button id="create">Create New Note</button>
+  </div>
+  <div id="main" style="text-align: center;">
+    <ul id="notes" style="font-family: 'Caveat Brush', cursive;font-size: 20px;"> </ul> 
+  </div>
+  </main>
+  
+</body>
+</html>

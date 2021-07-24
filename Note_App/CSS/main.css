@@ -1,0 +1,115 @@
+body{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    background-image:url("../images/Background.jpg");
+ }
+ main{
+     position: absolute;
+     padding-top: 140px;
+    margin: -4px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+ }
+ ul, li {
+     list-style: none;
+     display: contents;
+ }
+ 
+ #create{
+     width: 180px;
+     color: #000;
+     font-size: 12px;
+     font-weight: 500;
+     padding: 12px 0;
+     background-color: #fff;
+     border: 0;
+     border-radius: 20px;
+     outline: none;
+     margin-left: auto;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     font-size: large;
+     font-family: 'Indie Flower', cursive;
+   }
+   
+ article {
+     display: inline-block;
+     width: 248px;
+     border: 2px solid transparent;
+     border-radius: 8px;
+     cursor: pointer;
+     position: relative;
+     margin: 20px;
+     min-height: 160px;
+     background: aliceblue;
+     padding: 13px;
+ }
+ .title{
+     font-size: 130%;
+     font-weight: bold;
+     height: 43px;
+     width: 70%;
+     background: none;
+     border: none;
+     resize: none;
+     font-family: 'Indie Flower', cursive;
+ }
+ .note {
+     white-space: pre-line;
+     font-size:20px;
+     border: none;
+     resize: none;
+     background: transparent;
+     display: block;
+     width: 100%;
+     padding: 8px;
+     box-sizing: border-box;
+     cursor: inherit;
+     font: inherit;
+     min-height: 160px;
+ }
+ 
+ .note:focus {
+     cursor: text;
+ }
+ 
+ header, footer {
+     position:absolute;
+     background-color: rgb(56,182,255) ;
+     width: 100%; 
+ }
+ 
+ header{
+     padding-top: 20px;
+     height: 90px;
+ }
+ header h1{
+     padding-top: 40px;
+     text-align: center ;
+     text-transform: uppercase;
+     color: #FFFFFF ;
+ }
+ 
+ footer {
+    bottom:0;
+    height:60px;
+ }
+ 
+ .close{
+     padding: 1px 3px;
+     margin: 10px; 
+     position: absolute; 
+     top: 0; 
+     right: 0;
+     height: 24px;
+     padding: 0px;
+     margin: 0px;
+ }
+ 
+ 
+ 
+ 
