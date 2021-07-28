@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sleep Tracker</title>
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="JS/jquery/jquery-1.4.4.min.js"></script>
+  <script type="text/javascript" src="JS/json2.js"></script>
+  <script type="text/javascript" src="JS/main.js"></script>
+  <script>
+    $(document).ready(function () {
+        details = $("#time");
+
+        $("#create").click(function () {
+            show();
+        });
+        if (count === 0) {
+            show();
+        }
+    });
+    
+  </script>
+  
+</head>
+
+<body>
+  <div id="input">
+    Username: <input type="text" name="name" id="name">
+    <input type="button" value="ADD" id="create">
+    <div>
+      <table>
+        <tr>
+          <th>Date</th>
+          <th>Sleeping Time</th>
+          <th>Waking Time</th>
+        </tr>
+        <tbody id="time">
+          
+        </tbody>
+      </table>
+      <input type="button" value="Analyse" onclick="analyse()">
+    </div>
+  </div>
+</body>
+</html>
