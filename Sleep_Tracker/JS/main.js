@@ -1,6 +1,6 @@
 var details, count = 0;
 
-function show(title, note) {
+function show() {
     if (count>6){
         alert("7 days data is enough");
     }
